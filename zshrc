@@ -1,0 +1,99 @@
+# /etc/zsh/zshrc: system-wide .zshrc file for zsh(1).
+#
+# This file is sourced only for interactive shells. It
+# should contain commands to set up aliases, functions,
+# options, key bindings, etc.
+#
+# Global Order: zshenv, zprofile, zshrc, zlogin
+
+zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
+			     /usr/local/arm/bin /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
+
+#unalias run-help
+autoload run-help
+
+autoload -U compinit
+compinit
+
+# my stuff 
+PS1='%1c # '
+
+# security 
+# umask 077
+
+# spelling options 
+# setopt correctall
+# alias mv='nocorrect mv'       # no spelling correction on mv
+# alias rm='nocorrect rm'       # no spelling correction on mv
+# alias cp='nocorrect cp'       # no spelling correction on cp
+# alias mkdir='nocorrect mkdir' # no spelling correction on mkdir
+
+# command aliases
+alias la='ls -A'
+alias l='ls -CF'
+alias ll='ls -l'
+alias lh='ls -lh'
+alias cp='cp -r'
+alias df='df -h'
+alias rm='rm -r'
+alias chown='chown -R'
+alias chmod='chmod -R'
+alias indent='indent -npsl -bl -bli0 -bad -bap -bbb'
+
+# data directory aliases
+alias code='cd ~/code'
+alias home='cd ~/'
+alias downloads='cd ~/downloads'
+
+# system aliases
+alias sshsatoshi='ssh obulpathi@10.227.80.64'
+alias sshxsatoshi='ssh -X obulpathi@10.227.80.64'
+alias sshlucky='ssh obulpathi@10.227.80.116'
+
+alias appengine='~/appengine/appengine/dev_appserver.py'
+
+#Ubuntu Launchpad
+export DEBEMAIL="obulpathi@gmail.com"
+export DEBFULLNAME="Obulapathi"
+
+# Hadoop Java
+export java='/usr/bin/java -Xmx1024m'
+
+#PATH
+ANDROIDPATH=~/android/studio/bin
+APPENGINEPATH=~/code/appengine/appengine
+CLOUDPATH=~/phd/
+PYTHONEGGSPATH=/usr/local/lib/python2.7/dist-packages
+SCRIPTSPATH=~/scripts
+
+# Hadoop
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-i386
+export HADOOP_CLASSPATH=~/hadoop/code
+export HADOOP_INSTALL=~/hadoop/hadoop
+export HIVE_INSTALL=~/hadoop/hive
+export PIG_INSTALL=~/hadoop/pig
+export HBASE_HOME=~/hadoop/hbase
+export ZOOKEEPER_INSTALL=~/hadoop/zookeeper
+export PATH=$PATH:$HADOOP_INSTALL/bin
+export PATH=$PATH:$HIVE_INSTALL/bin
+export PATH=$PATH:$PIG_INSTALL/bin
+export PATH=$PATH:$HBASE_HOME/bin
+export PATH=$PATH:$ZOOKEEPER_INSTALL/bin
+
+export PATH=$PATH:$PYTHONEGGSPATH
+export PYTHONSTARTUP=$HOME/.pythonrc.py
+export PYTHONPATH=/usr/lib/python2.7:$PYTHONPATH:$PATH:$APPENGINEPATH:$CUBENETPATH:$PYTHONEGGSPATH:$SCRIPTSPATH:$CLOUDPATH
+
+# jGroups Home
+export CLASSPATH=$CLASSPATH:~/misc/jars/hadoop-core-1.0.4.jar
+export PATH=$PATH:~/downloads/tmpj
+
+# Bitcoin and Mining
+# alias firemine="~/bitcoin/cpuminer/minerd -o http://freipool.com:9638 -u 1KEevwMaEtqovZWxc1ruQaAetCpCgQB6kU -p firepool.com"
+
+# display
+set sw=4
+set tab-width=4
+setterm -regtabs 4
+
+echo "Life, Liberty and Pursiut of Open Standards."
