@@ -18,4 +18,14 @@ configure:
 	cp config/bashrc ~/.bashrc
 	cp config/vimrc ~/.vimrc
 	cp config/gitconfig ~/.gitconfig
+	cp others/user-dirs.dirs ~/.config/user-dirs.dirs
+	mv ~/Desktop ~/desktop
+	mv ~/Downloads ~/downloads
+	mv ~/Documents ~/documents
+	mv ~/Music ~/music
+	mv ~/Pictures ~/pictures
+	mv ~/Music ~/music
+	mv ~/Templates ~/.templates
+	mv ~/Videos ~/videos
+	rm ~/examples.desktop
 	chsh -s `which zsh`
