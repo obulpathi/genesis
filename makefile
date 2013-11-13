@@ -24,6 +24,7 @@ configure:
 	mv ~/Documents ~/documents
 	mv ~/Music ~/music
 	mv ~/Pictures ~/pictures
+	mv ~/Public ~/public
 	mv ~/Templates ~/.templates
 	mv ~/Videos ~/videos
 	rm ~/examples.desktop
