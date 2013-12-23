@@ -13,8 +13,8 @@ set visualbell t_vb=    " turn off error beep/flash
 set novisualbell    " turn off visual bell
 set nobackup        " do not keep a backup file
 set number          " show line numbers
-"set ignorecase      " ignore case when searching
-set noignorecase   " don't ignore case
+set ignorecase      " ignore case when searching
+" set noignorecase   " don't ignore case
 set title           " show title in console title bar
 set ttyfast         " smoother changes
 "set ttyscroll=0        " turn off scrolling, didn't work well with PuTTY
@@ -40,7 +40,11 @@ set smartindent        " smart indent
 syntax on           " syntax highlighing
 
 " shortcuts
-map <C-Up> <C-W>k
-map <C-Down> <C-W>j
+" map <C-Up> <C-W>k
+" map <C-Down> <C-W>j
 map <C-Left> <C-W>h
 map <C-Right> <C-W>l
+
+" for ctags
+map <C-Up> <C-t>
+map <C-Down> <C-]>
