@@ -2,10 +2,7 @@ confdir = config
 iconsdir = iconsdir
 scriptsdir = scripts
 
-.PHONY: configure
-
-default:
-	echo "Tell me what to do"
+.PHONY: configure dirs
 
 install:
 	sudo apt-get install git vim zsh tree
@@ -18,6 +15,9 @@ configure:
 	cp config/bashrc ~/.bashrc
 	cp config/vimrc ~/.vimrc
 	cp config/gitconfig ~/.gitconfig
+	sudo chsh -s `which zsh`
+
+dirs:
 	cp others/user-dirs.dirs ~/.config/user-dirs.dirs
 	mv ~/Desktop ~/desktop
 	mv ~/Downloads ~/downloads
@@ -28,4 +28,3 @@ configure:
 	mv ~/Templates ~/.templates
 	mv ~/Videos ~/videos
 	rm ~/examples.desktop
-	chsh -s `which zsh`
