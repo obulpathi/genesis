@@ -16,7 +16,8 @@ autoload -U compinit
 compinit
 
 # my stuff 
-PS1='%1c # '
+# PS1='%1c # '
+PS1='%m@%1c # '
 
 # security 
 # umask 077
