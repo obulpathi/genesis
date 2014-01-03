@@ -33,18 +33,26 @@ set smartindent        " smart indent
 "set nocindent  
 
 "set autowrite      " auto saves changes when quitting and swiching buffer
-"set expandtab      " tabs are converted to spaces, use only when required
+set expandtab      " tabs are converted to spaces, use only when required
 "set sm             " show matching braces, somewhat annoying...
 "set nowrap         " don't wrap lines
+
+set splitbelow      " split window to below by default
+set splitright      " split window to right by default
+
+set statusline+=%F
 
 syntax on           " syntax highlighing
 
 " shortcuts
-" map <C-Up> <C-W>k
-" map <C-Down> <C-W>j
+map <C-Up> <C-W>k
+map <C-Down> <C-W>j
 map <C-Left> <C-W>h
 map <C-Right> <C-W>l
 
 " for ctags
-map <C-Up> <C-t>
-map <C-Down> <C-]>
+map <C-A-Up> <C-t>
+map <C-A-Down> <C-]>
+
+" map split to vsplit
+nmap :split :vsplit
