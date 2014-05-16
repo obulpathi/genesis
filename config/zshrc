@@ -43,54 +43,14 @@ alias indent='indent -npsl -bl -bli0 -bad -bap -bbb'
 
 # data directory aliases
 alias code='cd ~/code'
+alias misc='cd ~/misc'
+
 alias home='cd ~/'
 alias downloads='cd ~/downloads'
-
-# system aliases
-alias sshsatoshi='ssh obulpathi@10.227.80.64'
-alias sshxsatoshi='ssh -X obulpathi@10.227.80.64'
-alias sshlucky='ssh obulpathi@10.227.80.116'
-
-alias appengine='~/appengine/appengine/dev_appserver.py'
 
 #Ubuntu Launchpad
 export DEBEMAIL="obulpathi@gmail.com"
 export DEBFULLNAME="Obulapathi"
-
-# Hadoop Java
-export java='/usr/bin/java -Xmx1024m'
-
-#PATH
-ANDROIDPATH=~/android/studio/bin
-APPENGINEPATH=~/code/appengine/appengine
-CLOUDPATH=~/phd/
-PYTHONEGGSPATH=/usr/local/lib/python2.7/dist-packages
-SCRIPTSPATH=~/scripts
-
-# Hadoop
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-i386
-export HADOOP_CLASSPATH=~/hadoop/code
-export HADOOP_INSTALL=~/hadoop/hadoop
-export HIVE_INSTALL=~/hadoop/hive
-export PIG_INSTALL=~/hadoop/pig
-export HBASE_HOME=~/hadoop/hbase
-export ZOOKEEPER_INSTALL=~/hadoop/zookeeper
-export PATH=$PATH:$HADOOP_INSTALL/bin
-export PATH=$PATH:$HIVE_INSTALL/bin
-export PATH=$PATH:$PIG_INSTALL/bin
-export PATH=$PATH:$HBASE_HOME/bin
-export PATH=$PATH:$ZOOKEEPER_INSTALL/bin
-
-export PATH=$PATH:$PYTHONEGGSPATH
-export PYTHONSTARTUP=$HOME/.pythonrc.py
-export PYTHONPATH=/usr/lib/python2.7:$PYTHONPATH:$PATH:$APPENGINEPATH:$CUBENETPATH:$PYTHONEGGSPATH:$SCRIPTSPATH:$CLOUDPATH
-
-# jGroups Home
-export CLASSPATH=$CLASSPATH:~/misc/jars/hadoop-core-1.0.4.jar
-export PATH=$PATH:~/downloads/tmpj
-
-# Bitcoin and Mining
-# alias firemine="~/bitcoin/cpuminer/minerd -o http://freipool.com:9638 -u 1KEevwMaEtqovZWxc1ruQaAetCpCgQB6kU -p firepool.com"
 
 # display
 set sw=4
