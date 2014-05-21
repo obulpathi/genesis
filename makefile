@@ -25,7 +25,7 @@ configure:
 	cp config/bashrc ~/.bashrc
 	cp config/vimrc ~/.vimrc
 	cp config/gitconfig ~/.gitconfig
-	# sudo chsh -s `which zsh`
+	sudo chsh -s `which zsh`
 
 dirs:
 	cp others/user-dirs.dirs ~/.config/user-dirs.dirs
