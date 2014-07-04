@@ -25,6 +25,7 @@ configure:
 	cp config/bashrc ~/.bashrc
 	cp config/vimrc ~/.vimrc
 	cp config/gitconfig ~/.gitconfig
+	cp others/gtk.css ~/.config/gtk-3.0/gtk-css
 	mkdir ~/.ssh
 	cat config/id_rsa.pub >> ~/.ssh/authorized_keys
 	sudo chsh -s `which zsh`
