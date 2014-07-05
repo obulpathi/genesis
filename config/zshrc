@@ -57,4 +57,12 @@ set sw=4
 set tab-width=4
 setterm -regtabs 4
 
+# Window title
+case $TERM in
+    rxvt|*term)
+    # precmd() { print -Pn "%~\a" }
+    preexec () { print -Pn "\e]0;$1\a" }
+    ;;
+esac
+
 echo "Life, Liberty and Pursiut of Open Standards."
