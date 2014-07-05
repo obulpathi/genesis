@@ -14,10 +14,10 @@ TerminalWindow .notebook {
 
 
 TerminalWindow .notebook tab:active {
-    background-color: shade(@light-grey,1); /* color of active tab */
+    background-color: shade(@black,1); /* color of active tab */
 }
 
 
 TerminalWindow .notebook tab {
-    background-color: shade(@black,1); /* color of inactive tab */
+    background-color: shade(@light-grey,1); /* color of inactive tab */
 }
