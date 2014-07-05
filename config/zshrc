@@ -61,7 +61,8 @@ setterm -regtabs 4
 case $TERM in
     rxvt|*term)
     # precmd() { print -Pn "%~\a" }
-    preexec () { print -Pn "\e]0;$1\a" }
+    # preexec () { print -Pn "\e]0;$1\a" }
+    chpwd() { print -Pn "\e]2;%1d\a"}
     ;;
 esac
 
