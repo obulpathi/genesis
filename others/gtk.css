@@ -14,7 +14,7 @@ TerminalWindow .notebook {
 
 
 TerminalWindow .notebook tab:active {
-    background-color: shade(@dark-grey,1); /* color of active tab */
+    background-color: shade(@light-grey,1); /* color of active tab */
 }
 
 
