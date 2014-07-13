@@ -16,7 +16,7 @@ set number          " show line numbers
 set ignorecase      " ignore case when searching
 " set noignorecase   " don't ignore case
 set title           " show title in console title bar
-" let &titleold=getcwd()  " set the working dorectory as tilte when vim closes
+let &titleold=substitute(getcwd(), $HOME, "~", '')" set the working dorectory as tilte when vim closes
 set ttyfast         " smoother changes
 "set ttyscroll=0        " turn off scrolling, didn't work well with PuTTY
 "set modeline        " last lines in document sets vim mode
