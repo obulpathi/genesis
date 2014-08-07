@@ -16,10 +16,10 @@ install-utils:
 
 install-python:
 	sudo apt-get install -y python-pip python-virtualenv ipython python-ipdb 
-	sudo pip install requests httpie
+	sudo pip install requests httpie howdoi
 
 install-apps:
-	sudo pip install shutter meld chromium-browser
+	sudo apt-get install shutter meld chromium-browser
 
 configure:
 	cp config/zshrc ~/.zshrc
