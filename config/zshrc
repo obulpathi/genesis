@@ -33,6 +33,8 @@ alias rm='rm -r'
 alias maek='make'
 alias chown='chown -R'
 alias chmod='chmod -R'
+alias pyhton='python'
+alias newenv='mkvirtualenv'
 alias indent='indent -npsl -bl -bli0 -bad -bap -bbb'
 
 # data directory aliases
@@ -41,6 +43,10 @@ alias misc='cd ~/misc'
 
 alias home='cd ~/'
 alias downloads='cd ~/downloads'
+
+# python virtualenv
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
 #Ubuntu Launchpad
 export DEBEMAIL="obulpathi@gmail.com"
