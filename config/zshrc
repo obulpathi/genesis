@@ -34,6 +34,8 @@ alias maek='make'
 alias chown='chown -R'
 alias chmod='chmod -R'
 alias pyhton='python'
+alias eenv='wokron'
+alias xenv='deactivate'
 alias newenv='mkvirtualenv'
 alias indent='indent -npsl -bl -bli0 -bad -bap -bbb'
 
