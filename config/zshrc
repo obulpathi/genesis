@@ -48,7 +48,7 @@ alias downloads='cd ~/downloads'
 
 # python virtualenv
 export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
 #Ubuntu Launchpad
 export DEBEMAIL="obulpathi@gmail.com"
