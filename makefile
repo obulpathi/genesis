@@ -15,11 +15,15 @@ install-utils:
 	sudo apt-get install -y chromium-browser atom
 
 install-python:
-	sudo apt-get install -y python-pip python-virtualenv ipython python-ipdb python-tox
-	sudo pip install virtualenvwrapper
+	sudo apt-get install -y python-pip python-virtualenv ipython python-ipdb python-tox python-sphinx
+	sudo pip install virtualenvwrapper httpie
 
 install-apps:
 	sudo apt-get install shutter meld chromium-browser
+
+install-web:
+	install android-studio google-web-designer arduino evernote-client
+	install shutter meld chromium-browser redshift redshift-gtk
 
 configure:
 	cp config/zshrc ~/.zshrc
@@ -54,4 +58,5 @@ dirs:
 
 configure-manual:
 	terminal: change the copy and paste shortcuts
+	terminal and atom: change new tab, close tab shortcuts
 	atom plugins
