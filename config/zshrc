@@ -47,7 +47,7 @@ alias home='cd ~/'
 alias downloads='cd ~/downloads'
 
 # python virtualenv
-export WORKON_HOME=~/.virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
 #Ubuntu Launchpad
