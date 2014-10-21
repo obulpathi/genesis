@@ -1,4 +1,5 @@
 Genesis
 =======
 
-Configuration files for a newly installed computer
+Software installation and configuration files for a newly installed computer.
+Genesis uses GNU Stow for configuring applications.

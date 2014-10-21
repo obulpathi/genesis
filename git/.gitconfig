@@ -1,0 +1,13 @@
+[user]
+    name = Obulapathi N Challa
+    email = obulpathi@gmail.com
+[core]
+    editor = vim
+[color]
+    ui = auto
+[alias]
+    unadd = reset HEAD
+[gitreview]
+    username = obulpathi
+[push]
+    default = simple

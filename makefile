@@ -1,11 +1,7 @@
-confdir = config
-iconsdir = iconsdir
-scriptsdir = scripts
-
 .PHONY: configure dirs
 
 install:
-	sudo apt-get install -y git vim zsh tree
+	sudo apt-get install -y git vim zsh tree stow
 
 install-cloud:
 	sudo pip install awscli
@@ -26,12 +22,6 @@ install-web:
 	install shutter meld chromium-browser redshift redshift-gtk
 
 configure:
-	cp config/zshrc ~/.zshrc
-	cp config/bashrc ~/.bashrc
-	cp config/vimrc ~/.vimrc
-	cp config/gitconfig ~/.gitconfig
-	cp others/gtk.css ~/.config/gtk-3.0/gtk.css
-	cp others/user-dirs.dirs ~/.config/user-dirs.dirs
 	sudo chsh -s `which zsh`
 
 configure-git:
