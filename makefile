@@ -1,39 +1,23 @@
-.PHONY: configure dirs
-
-install:
-	sudo apt-get install -y git vim zsh tree stow
-
-install-cloud:
-	sudo pip install awscli
-
-install-utils:
-	sudo apt-get install -y git vim zsh tree shred moreutils wipe meld shutter
-	sudo apt-get install -y chromium-browser atom
-
-install-python:
-	sudo apt-get install -y python-pip python-virtualenv ipython python-ipdb python-tox python-sphinx
-	sudo pip install virtualenvwrapper httpie
-
-install-apps:
-	sudo apt-get install shutter meld chromium-browser
-
-install-web:
-	install android-studio google-web-designer arduino evernote-client
-	install shutter meld chromium-browser redshift redshift-gtk
+.PHONY: install configure dirs
 
 configure:
+	sudo add-apt-repository ppa:webupd8team/atom
+	sudo apt-get update -y
+	sudo apt-get install -y git vim zsh stow
 	sudo chsh -s `which zsh`
 
-configure-git:
-	git config --global user.name "Obulpathi"
-	git config --global user.email obulpathi@gmail.com
-	git config --global core.editor "vim"
-	git config --global color.ui auto
-	git config --global alias.unadd "reset HEAD"
+install:
+	sudo apt-get install -y git vim zsh stow
+	sudo apt-get install -y tree moreutils wipe meld shutter redshift-gtk
+	sudo apt-get install -y chromium-browser atom
+	sudo apt-get install -y golang
+	sudo apt-get install -y python-pip python-dev python-virtualenv virtualenvwrapper ipython python-ipdb python-tox python-sphinx
 
-configure-atom:
-	#git config --global user.name "Obulpathi"
-	#git config --global user.email obulpathi@gmail.com
+install-basic:
+	sudo apt-get install -y make git vim zsh stow
+
+install-manual:
+	android-studio google-web-designer arduino
 
 dirs:
 	mv ~/Desktop ~/.desktop
@@ -47,6 +31,7 @@ dirs:
 	rm ~/examples.desktop
 
 configure-manual:
-	terminal: change the copy and paste shortcuts
+	terminal: shortcuts for copy, paste, tabs: new, close, open
 	terminal and atom: change new tab, close tab shortcuts
 	atom plugins
+	github ssh-keys
