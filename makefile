@@ -2,6 +2,7 @@
 
 configure:
 	sudo add-apt-repository ppa:webupd8team/atom
+	sudo add-apt-repository ppa:indicator-brightness/ppa
 	sudo apt-get update -y
 	sudo apt-get install -y git vim zsh stow
 	sudo chsh -s `which zsh`
@@ -18,6 +19,9 @@ install-basic:
 
 install-manual:
 	android-studio google-web-designer arduino
+
+applets:
+	sudo apt-get install indicator-brightness
 
 dirs:
 	mv ~/Desktop ~/.desktop
