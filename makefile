@@ -9,10 +9,11 @@ configure:
 
 install:
 	sudo apt-get install -y git vim zsh stow
-	sudo apt-get install -y tree moreutils wipe meld shutter redshift-gtk
-	sudo apt-get install -y chromium-browser atom
+	sudo apt-get install -y tree moreutils wipe meld shutter nmap wireshark redshift-gtk
+	sudo apt-get install -y chromium-browser atom docker.io
 	sudo apt-get install -y golang
-	sudo apt-get install -y python-pip python-dev python-virtualenv virtualenvwrapper ipython python-ipdb python-tox python-sphinx
+	sudo apt-get install -y python-pip python-dev python-virtualenv virtualenvwrapper python-ipdb python-tox python-sphinx ipython ipython-qtconsole ipython-notebook
+	sudo apt-get install -y virtualbox virtualbox-guest-\*
 
 install-basic:
 	sudo apt-get install -y make git vim zsh stow

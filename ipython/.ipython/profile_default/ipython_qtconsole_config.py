@@ -44,7 +44,7 @@ c = get_config()
 # c.IPythonQtConsoleApp.verbose_crash = False
 
 # path to a custom CSS stylesheet
-c.IPythonQtConsoleApp.stylesheet = '/home/obulpathi/.ipython/profile_default/solarizeddark.css'
+# c.IPythonQtConsoleApp.stylesheet = ''
 
 # set the heartbeat port [default: random]
 # c.IPythonQtConsoleApp.hb_port = 0
@@ -261,7 +261,7 @@ c.IPythonQtConsoleApp.stylesheet = '/home/obulpathi/.ipython/profile_default/sol
 
 # If not empty, use this Pygments style for syntax highlighting. Otherwise, the
 # style sheet is queried for Pygments style information.
-c.IPythonWidget.syntax_style = u'solarizeddark'
+# c.IPythonWidget.syntax_style = u''
 
 # The maximum number of lines of text before truncation. Specifying a non-
 # positive number disables text truncation (not recommended).
@@ -301,7 +301,7 @@ c.IPythonWidget.buffer_size = 5000
 # c.ZMQInteractiveShell.show_rewritten_input = True
 
 # Set the color scheme (NoColor, Linux, or LightBG).
-# c.ZMQInteractiveShell.colors = 'Linux'
+c.ZMQInteractiveShell.colors = 'Linux'
 
 # 
 # c.ZMQInteractiveShell.separate_in = '\n'
@@ -341,7 +341,7 @@ c.IPythonWidget.buffer_size = 5000
 # c.ZMQInteractiveShell.readline_parse_and_bind = ['tab: complete', '"\\C-l": clear-screen', 'set show-all-if-ambiguous on', '"\\C-o": tab-insert', '"\\C-r": reverse-search-history', '"\\C-s": forward-search-history', '"\\C-p": history-search-backward', '"\\C-n": history-search-forward', '"\\e[A": history-search-backward', '"\\e[B": history-search-forward', '"\\C-k": kill-line', '"\\C-u": unix-line-discard']
 
 # Enable magic commands to be called without the leading %.
-# c.ZMQInteractiveShell.automagic = True
+c.ZMQInteractiveShell.automagic = True
 
 # 
 # c.ZMQInteractiveShell.debug = False
