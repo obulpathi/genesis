@@ -86,6 +86,9 @@ PS1='%1c # '
 # shortcut remapping
 stty intr ^K
 
+# append history
+setopt APPEND_HISTORY
+
 # Window title
 case $TERM in
 	rxvt|*term)
