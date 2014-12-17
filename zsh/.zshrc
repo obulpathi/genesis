@@ -114,6 +114,7 @@ alias pyhton='python'
 alias eenv='wokron'
 alias xenv='deactivate'
 alias newenv='mkvirtualenv'
+alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
 # python virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
