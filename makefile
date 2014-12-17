@@ -12,11 +12,16 @@ install:
 	sudo apt-get install -y tree moreutils wipe meld shutter nmap wireshark redshift-gtk
 	sudo apt-get install -y chromium-browser atom docker.io
 	sudo apt-get install -y golang
-	sudo apt-get install -y python-pip python-dev python-virtualenv virtualenvwrapper python-ipdb python-tox python-sphinx ipython ipython-qtconsole ipython-notebook
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
 
 install-basic:
 	sudo apt-get install -y make git vim zsh stow
+
+install-python:
+	sudo apt-get install -y python-pip python-tox python-sphinx python-dev
+	sudo apt-get install -y python-virtualenv virtualenvwrapper
+	sudo apt-get install -y python-numpy python-scipy python-sympy python-matplotlib python-pandas
+	sudo apt-get install -y ipython python-ipdb ipython-qtconsole ipython-notebook
 
 install-manual:
 	android-studio google-web-designer arduino

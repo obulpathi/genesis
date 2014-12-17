@@ -79,21 +79,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# override zsh settings
+PS1='%1c # '
+ZSH_THEME_TERM_TITLE_IDLE="%3c"
 
 # my settings
-PS1='%1c # '
 
 # shortcut remapping
 stty intr ^K
-
-# Window title
-case $TERM in
-	rxvt|*term)
-	# precmd() { print -Pn "%~\a" }
-	# preexec () { print -Pn "\e]0;$1\a" }
-	chpwd() { print -Pn "\e]2;%1d\a"}
-	;;
-esac
 
 # Ubuntu Launchpad
 export DEBEMAIL="obulpathi@gmail.com"
