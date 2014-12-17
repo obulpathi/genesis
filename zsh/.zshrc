@@ -88,6 +88,9 @@ ZSH_THEME_TERM_TITLE_IDLE="%3c"
 # shortcut remapping
 stty intr ^K
 
+# append history
+setopt APPEND_HISTORY
+
 # Ubuntu Launchpad
 export DEBEMAIL="obulpathi@gmail.com"
 export DEBFULLNAME="Obulapathi"
