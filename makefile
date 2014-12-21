@@ -1,8 +1,7 @@
 .PHONY: install configure dirs
 
 configure:
-	sudo add-apt-repository ppa:webupd8team/atom
-	sudo add-apt-repository ppa:indicator-brightness/ppa
+	sudo add-apt-repository -y ppa:webupd8team/atom
 	sudo apt-get update -y
 	sudo apt-get install -y git vim zsh stow
 	sudo chsh -s `which zsh`
@@ -22,6 +21,12 @@ install-python:
 	sudo apt-get install -y python-virtualenv virtualenvwrapper
 	sudo apt-get install -y python-numpy python-scipy python-sympy python-matplotlib python-pandas
 	sudo apt-get install -y ipython python-ipdb ipython-qtconsole ipython-notebook
+
+install-java:
+	sudo apt-get install default-jre default-jdk
+	sudo update-alternatives --config java
+	echo JAVA_HOME="/usr/lib/jvm/java-6-openjdk-amd64" >> /etc/environment
+	source /etc/environment
 
 install-manual:
 	android-studio google-web-designer arduino
