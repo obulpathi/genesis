@@ -50,5 +50,4 @@ dirs:
 configure-manual:
 	terminal: shortcuts for copy, paste, tabs: new, close, open
 	terminal and atom: change new tab, close tab shortcuts
-	atom plugins
-	github ssh-keys
+	atom-plugins github-ssh-keys oh-my-zsh
