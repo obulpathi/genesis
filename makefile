@@ -13,7 +13,7 @@ install:
 	sudo apt-get install -y chromium-browser atom docker.io
 	sudo apt-get install -y golang
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
-	sudo apt-get install -y ubuntu-tweak
+	sudo apt-get install -y ubuntu-tweak filezilla
 
 install-basic:
 	sudo apt-get install -y make git vim zsh stow
