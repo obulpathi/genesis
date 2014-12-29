@@ -2,6 +2,7 @@
 
 configure:
 	sudo add-apt-repository -y ppa:webupd8team/atom
+	sudo add-apt-repository -y ppa:tualatrix/ppa
 	sudo apt-get update -y
 	sudo apt-get install -y git vim zsh stow
 	sudo chsh -s `which zsh`
@@ -12,6 +13,7 @@ install:
 	sudo apt-get install -y chromium-browser atom docker.io
 	sudo apt-get install -y golang
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
+	sudo apt-get install -y ubuntu-tweak
 
 install-basic:
 	sudo apt-get install -y make git vim zsh stow
