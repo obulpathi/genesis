@@ -116,8 +116,15 @@ alias xenv='deactivate'
 alias newenv='mkvirtualenv'
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/obulpathi/tools/google/path.zsh.inc'
+
+# The next line enables bash completion for gcloud.
+source '/home/obulpathi/tools/google/completion.zsh.inc'
+
 # python virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
 echo "Life, Liberty and Pursiut of Open Standards."
+
