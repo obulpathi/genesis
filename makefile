@@ -1,7 +1,4 @@
-.PHONY: install install-basic configure dirs
-
-install-basic:
-	sudo apt-get install -y make git vim zsh stow
+.PHONY: install configure dirs
 
 configure:
 	sudo add-apt-repository -y ppa:webupd8team/atom
@@ -16,8 +13,10 @@ install:
 	sudo apt-get install -y chromium-browser atom docker.io
 	sudo apt-get install -y golang
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
-	sudo apt-get install -y ubuntu-tweak compizconfig-settings-manager
-	sudo apt-get install -y filezilla
+	sudo apt-get install -y ubuntu-tweak filezilla
+
+install-basic:
+	sudo apt-get install -y make git vim zsh stow
 
 install-python:
 	sudo apt-get install -y python-pip python-tox python-sphinx python-dev
