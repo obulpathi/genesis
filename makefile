@@ -2,7 +2,7 @@
 
 configure:
 	sudo add-apt-repository -y ppa:webupd8team/atom
-	sudo add-apt-repository -y ppa:tualatrix/ppa
+	sudo add-apt-repository -y ppa:fossfreedom/rhythmbox-plugins
 	sudo apt-get update -y
 	sudo apt-get install -y git vim zsh stow
 	sudo chsh -s `which zsh`
@@ -13,7 +13,9 @@ install:
 	sudo apt-get install -y chromium-browser atom docker.io
 	sudo apt-get install -y golang
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
-	sudo apt-get install -y ubuntu-tweak filezilla
+	sudo apt-get install -y filezilla
+	sudo apt-get install rhythmbox-plugin-coverart-browser
+	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 install-basic:
 	sudo apt-get install -y make git vim zsh stow
@@ -34,7 +36,7 @@ install-manual:
 	android-studio google-web-designer arduino
 
 applets:
-	sudo apt-get install indicator-brightness
+	sudo apt-get install indicator-brightness indicator-multiload
 
 dirs:
 	mv ~/Desktop ~/.desktop
@@ -50,4 +52,4 @@ dirs:
 configure-manual:
 	terminal: shortcuts for copy, paste, tabs: new, close, open
 	terminal and atom: change new tab, close tab shortcuts
-	atom-plugins github-ssh-keys oh-my-zsh
+	atom-plugins github-ssh-keys
