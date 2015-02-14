@@ -14,7 +14,7 @@ install:
 	sudo apt-get install -y golang
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
 	sudo apt-get install -y filezilla
-	sudo apt-get install rhythmbox-plugin-coverart-browser
+	sudo apt-get install rhythmbox-plugin-coverart-browser picard
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 install-basic:
