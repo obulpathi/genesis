@@ -111,9 +111,11 @@ alias maek='make'
 alias chown='chown -R'
 alias chmod='chmod -R'
 alias pyhton='python'
+alias zkshell='zk-shell'
 alias eenv='wokron'
 alias xenv='deactivate'
 alias newenv='mkvirtualenv'
+alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
 # go path
 export GOPATH=$HOME/go
