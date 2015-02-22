@@ -3,6 +3,7 @@
 configure:
 	sudo apt-add-repository -y "http://archive.canonical.com/ubuntu partner"
 	sudo add-apt-repository -y ppa:webupd8team/atom
+	sudo apt-add-repository -y ppa:bitcoin/bitcoin
 	sudo add-apt-repository -y ppa:fossfreedom/rhythmbox-plugins
 	sudo apt-get update -y
 	sudo apt-get install -y git vim zsh stow
@@ -28,12 +29,16 @@ install-python:
 	sudo apt-get install -y python-virtualenv virtualenvwrapper
 	sudo apt-get install -y python-numpy python-scipy python-sympy python-matplotlib python-pandas
 	sudo apt-get install -y ipython python-ipdb ipython-qtconsole ipython-notebook
+	sudo apt-get install -y blockchain
 
 install-java:
 	sudo apt-get install default-jre default-jdk
 	sudo update-alternatives --config java
 	echo JAVA_HOME="/usr/lib/jvm/java-6-openjdk-amd64" >> /etc/environment
 	source /etc/environment
+
+install-bitcoin:
+	sudo apt-get install -y bitcoind bitcoin-qt bitcoin-cli
 
 install-manual:
 	android-studio google-web-designer arduino
