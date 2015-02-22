@@ -17,6 +17,7 @@ install:
 	sudo apt-get install -y filezilla
 	sudo apt-get install -y rhythmbox-plugin-coverart-browser picard
 	sudo apt-get install -y google-cloud-sdk
+	sudo apt-get install -y apt-file apt-utils apt-venv apt-watch apt-show-versions
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 install-basic:

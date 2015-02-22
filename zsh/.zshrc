@@ -125,17 +125,11 @@ export PATH=$PATH:$GOPATH/bin
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
-# Docker
-alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
-
 # Google Cloud
 alias appengine-deploy='gcloud preview app deploy'
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/obulpathi/tools/google/path.zsh.inc'
-
-# The next line enables bash completion for gcloud.
-source '/home/obulpathi/tools/google/completion.zsh.inc'
+# The next line enables bash completion for google cloud sdk.
+source '/home/obulpathi/.completion.zsh.inc'
 
 echo "Life, Liberty and Pursiut of Open Standards."
 
