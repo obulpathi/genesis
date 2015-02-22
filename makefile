@@ -1,6 +1,7 @@
 .PHONY: install configure dirs
 
 configure:
+	sudo apt-add-repository -y "http://archive.canonical.com/ubuntu partner"
 	sudo add-apt-repository -y ppa:webupd8team/atom
 	sudo add-apt-repository -y ppa:fossfreedom/rhythmbox-plugins
 	sudo apt-get update -y
@@ -14,7 +15,8 @@ install:
 	sudo apt-get install -y golang
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
 	sudo apt-get install -y filezilla
-	sudo apt-get install rhythmbox-plugin-coverart-browser picard
+	sudo apt-get install -y rhythmbox-plugin-coverart-browser picard
+	sudo apt-get install -y google-cloud-sdk
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 install-basic:
