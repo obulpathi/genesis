@@ -111,7 +111,6 @@ alias maek='make'
 alias chown='chown -R'
 alias chmod='chmod -R'
 alias pyhton='python'
-alias zkshell='zk-shell'
 alias cloud='gcloud'
 alias eenv='wokron'
 alias xenv='deactivate'
@@ -119,7 +118,7 @@ alias newenv='mkvirtualenv'
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
 # go path
-export GOPATH=$HOME/go
+export GOPATH=$HOME/code/go
 export PATH=$PATH:$GOPATH/bin
 
 # python virtualenv
@@ -133,4 +132,3 @@ alias appengine-deploy='gcloud preview app deploy'
 source '/home/obulpathi/.completion.zsh.inc'
 
 echo "Life, Liberty and Pursiut of Open Standards."
-
