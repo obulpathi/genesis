@@ -1,5 +1,28 @@
 .PHONY: install configure dirs
 
+configure-git:
+	git config --global user.name "Obulpathi"
+	git config --global user.email obulpathi@gmail.com
+	git config --global core.editor "vim"
+	git config --global color.ui auto
+	git config --global clean.requireForce false
+	git config --global push.default simple
+	git config --global gitreview.username obulpathi
+	git config --global alias.unadd "reset HEAD"
+	git config --global alias.unstage "reset --"
+	git config --global alias.changed 'show --pretty="format:" --name-only --oneline'
+
+configure-dirs:
+	mv ~/Desktop ~/.desktop
+	mv ~/Downloads ~/downloads
+	mv ~/Documents ~/documents
+	mv ~/Music ~/music
+	mv ~/Pictures ~/pictures
+	mv ~/Public ~/public
+	mv ~/Templates ~/.templates
+	mv ~/Videos ~/videos
+	rm ~/examples.desktop
+
 configure:
 	sudo add-apt-repository -y ppa:webupd8team/atom
 	sudo add-apt-repository -y ppa:fossfreedom/rhythmbox-plugins
@@ -35,19 +58,8 @@ install-java:
 install-manual:
 	android-studio google-web-designer arduino
 
-applets:
+install-applets:
 	sudo apt-get install indicator-brightness indicator-multiload
-
-dirs:
-	mv ~/Desktop ~/.desktop
-	mv ~/Downloads ~/downloads
-	mv ~/Documents ~/documents
-	mv ~/Music ~/music
-	mv ~/Pictures ~/pictures
-	mv ~/Public ~/public
-	mv ~/Templates ~/.templates
-	mv ~/Videos ~/videos
-	rm ~/examples.desktop
 
 configure-manual:
 	terminal: shortcuts for copy, paste, tabs: new, close, open
