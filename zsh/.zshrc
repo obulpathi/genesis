@@ -132,5 +132,8 @@ alias appengine-deploy='gcloud preview app deploy'
 # The next line enables bash completion for google cloud sdk.
 source '/home/obulpathi/.completion.zsh.inc'
 
-echo "Life, Liberty and Pursiut of Open Standards."
+# Spark
+export SPARK_HOME=~/tools/spark/
+export PATH=$PATH:$SPARK_PATH/bin
 
+echo "Life, Liberty and Pursiut of Open Standards."

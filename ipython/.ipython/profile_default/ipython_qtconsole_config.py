@@ -30,7 +30,7 @@ c = get_config()
 # c.IPythonQtConsoleApp.ip = '127.0.0.1'
 
 # JSON file in which to store connection info [default: kernel-<pid>.json]
-# 
+#
 # This file will contain the IP, ports, and authentication key needed to connect
 # clients to this kernel. By default, this file will be created in the security-
 # dir of the current profile, but can be specified by absolute path.
@@ -98,7 +98,7 @@ c = get_config()
 # Set the IP or interface on which the kernel will listen.
 # c.IPKernelApp.ip = '127.0.0.1'
 
-# 
+#
 # c.IPKernelApp.parent_appname = u''
 
 # Create a massive crash report when IPython enconters what may be an internal
@@ -156,7 +156,7 @@ c = get_config()
 # c.IPKernelApp.parent = 0
 
 # JSON file in which to store connection info [default: kernel-<pid>.json]
-# 
+#
 # This file will contain the IP, ports, and authentication key needed to connect
 # clients to this kernel. By default, this file will be created in the security-
 # dir of the current profile, but can be specified by absolute path.
@@ -201,14 +201,14 @@ c = get_config()
 # IPythonWidget will inherit config from: FrontendWidget, HistoryConsoleWidget,
 # ConsoleWidget
 
-# 
+#
 # c.IPythonWidget.input_sep = '\n'
 
 # The type of underlying text widget to use. Valid values are 'plain', which
 # specifies a QPlainTextEdit, and 'rich', which specifies a QTextEdit.
 # c.IPythonWidget.kind = 'plain'
 
-# 
+#
 # c.IPythonWidget.output_sep2 = ''
 
 # The font size. If unconfigured, Qt will be entrusted with the size of the
@@ -221,7 +221,7 @@ c = get_config()
 # Use a list widget instead of plain text output for tab completion.
 # c.IPythonWidget.gui_completion = False
 
-# 
+#
 # c.IPythonWidget.in_prompt = 'In [<span class="in-prompt-number">%i</span>]: '
 
 # Whether to process ANSI escape codes.
@@ -239,7 +239,7 @@ c = get_config()
 # c.IPythonWidget.style_sheet = u''
 
 # The type of paging to use. Valid values are:
-# 
+#
 #     'inside' : The widget pages like a traditional terminal.
 #     'hsplit' : When paging is requested, the widget is split
 #                horizontally. The top pane contains the console, and the
@@ -251,7 +251,7 @@ c = get_config()
 #     'none'   : The text is written directly to the console.
 # c.IPythonWidget.paging = 'inside'
 
-# 
+#
 # c.IPythonWidget.output_sep = ''
 
 # A command for invoking a system text editor. If the string contains a
@@ -267,7 +267,7 @@ c = get_config()
 # positive number disables text truncation (not recommended).
 c.IPythonWidget.buffer_size = 5000
 
-# 
+#
 # c.IPythonWidget.history_lock = False
 
 # The font family to use for the console. On OSX this defaults to Monaco, on
@@ -275,7 +275,7 @@ c.IPythonWidget.buffer_size = 5000
 # platforms the default is Monospace.
 # c.IPythonWidget.font_family = u''
 
-# 
+#
 # c.IPythonWidget.out_prompt = 'Out[<span class="out-prompt-number">%i</span>]: '
 
 #------------------------------------------------------------------------------
@@ -291,7 +291,7 @@ c.IPythonWidget.buffer_size = 5000
 # color codes, this capability can be turned off.
 # c.ZMQInteractiveShell.color_info = True
 
-# 
+#
 # c.ZMQInteractiveShell.history_length = 10000
 
 # Don't call post-execute functions that have failed in the past.
@@ -303,13 +303,13 @@ c.IPythonWidget.buffer_size = 5000
 # Set the color scheme (NoColor, Linux, or LightBG).
 c.ZMQInteractiveShell.colors = 'Linux'
 
-# 
+#
 # c.ZMQInteractiveShell.separate_in = '\n'
 
 # Deprecated, use PromptManager.in2_template
 # c.ZMQInteractiveShell.prompt_in2 = '   .\\D.: '
 
-# 
+#
 # c.ZMQInteractiveShell.separate_out = ''
 
 # Deprecated, use PromptManager.in_template
@@ -331,28 +331,28 @@ c.ZMQInteractiveShell.colors = 'Linux'
 # no arguments are present).
 # c.ZMQInteractiveShell.autocall = 0
 
-# 
+#
 # c.ZMQInteractiveShell.separate_out2 = ''
 
 # Deprecated, use PromptManager.justify
 # c.ZMQInteractiveShell.prompts_pad_left = True
 
-# 
+#
 # c.ZMQInteractiveShell.readline_parse_and_bind = ['tab: complete', '"\\C-l": clear-screen', 'set show-all-if-ambiguous on', '"\\C-o": tab-insert', '"\\C-r": reverse-search-history', '"\\C-s": forward-search-history', '"\\C-p": history-search-backward', '"\\C-n": history-search-forward', '"\\e[A": history-search-backward', '"\\e[B": history-search-forward', '"\\C-k": kill-line', '"\\C-u": unix-line-discard']
 
 # Enable magic commands to be called without the leading %.
 c.ZMQInteractiveShell.automagic = True
 
-# 
+#
 # c.ZMQInteractiveShell.debug = False
 
-# 
+#
 # c.ZMQInteractiveShell.object_info_string_level = 0
 
-# 
+#
 # c.ZMQInteractiveShell.ipython_dir = ''
 
-# 
+#
 # c.ZMQInteractiveShell.readline_remove_delims = '-/~'
 
 # Start logging to the default log file.
@@ -361,7 +361,7 @@ c.ZMQInteractiveShell.automagic = True
 # The name of the logfile to use.
 # c.ZMQInteractiveShell.logfile = ''
 
-# 
+#
 # c.ZMQInteractiveShell.wildcards_case_sensitive = True
 
 # Save multi-line entries as one entry in readline history
@@ -370,10 +370,10 @@ c.ZMQInteractiveShell.automagic = True
 # Start logging to the given file in append mode.
 # c.ZMQInteractiveShell.logappend = ''
 
-# 
+#
 # c.ZMQInteractiveShell.xmode = 'Context'
 
-# 
+#
 # c.ZMQInteractiveShell.quiet = False
 
 # Deprecated, use PromptManager.out_template
@@ -395,10 +395,10 @@ c.ZMQInteractiveShell.automagic = True
 #------------------------------------------------------------------------------
 
 # An object to manage the profile directory and its resources.
-# 
+#
 # The profile directory is used by all IPython applications, to manage
 # configuration, logging and security.
-# 
+#
 # This object knows how to find, create and manage these directories. This
 # should be used by any code that wants to handle profiles.
 
@@ -411,27 +411,27 @@ c.ZMQInteractiveShell.automagic = True
 #------------------------------------------------------------------------------
 
 # Object for handling serialization and sending of messages.
-# 
+#
 # The Session object handles building messages and sending them with ZMQ sockets
 # or ZMQStream objects.  Objects can communicate with each other over the
 # network via Session objects, and only need to work with the dict-based IPython
 # message spec. The Session will handle serialization/deserialization, security,
 # and metadata.
-# 
+#
 # Sessions support configurable serialiization via packer/unpacker traits, and
 # signing with HMAC digests via the key/keyfile traits.
-# 
+#
 # Parameters ----------
-# 
+#
 # debug : bool
 #     whether to trigger extra debugging statements
 # packer/unpacker : str : 'json', 'pickle' or import_string
 #     importstrings for methods to serialize message parts.  If just
 #     'json' or 'pickle', predefined JSON and pickle packers will be used.
 #     Otherwise, the entire importstring must be used.
-# 
+#
 #     The functions must accept at least valid JSON input, and output *bytes*.
-# 
+#
 #     For example, to use msgpack:
 #     packer = 'msgpack.packb', unpacker='msgpack.unpackb'
 # pack/unpack : callables
