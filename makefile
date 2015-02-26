@@ -40,8 +40,9 @@ install:
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
 	sudo apt-get install -y filezilla
 	sudo apt-get install -y rhythmbox-plugin-coverart-browser picard
-	sudo apt-get install -y google-chrome-unstable google-cloud-sdk
+	sudo apt-get install -y google-chrome-stable google-cloud-sdk
 	sudo apt-get install -y apt-file apt-utils apt-venv apt-watch apt-show-versions
+	sudo pip install --upgrade google-api-python-client awscli boto3 pyrax
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 install-basic:
@@ -52,6 +53,7 @@ install-python:
 	sudo apt-get install -y python-virtualenv virtualenvwrapper
 	sudo apt-get install -y python-numpy python-scipy python-sympy python-matplotlib python-pandas
 	sudo apt-get install -y ipython python-ipdb ipython-qtconsole ipython-notebook
+	sudo apt-get install -y python-flask python-jinja2 python-django
 	sudo apt-get install -y blockchain
 
 install-java:
