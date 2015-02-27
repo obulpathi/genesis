@@ -62,6 +62,11 @@ install-java:
 	echo JAVA_HOME="/usr/lib/jvm/java-6-openjdk-amd64" >> /etc/environment
 	source /etc/environment
 
+install-oracle-java:
+	sudo apt-get install oracle-java7-installer
+	echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+	sudo update-java-alternatives -s java-7-oracle
+
 install-bitcoin:
 	sudo apt-get install -y bitcoind bitcoin-qt bitcoin-cli
 
