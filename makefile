@@ -28,6 +28,7 @@ configure:
 	sudo add-apt-repository -y ppa:webupd8team/atom
 	sudo apt-add-repository -y ppa:bitcoin/bitcoin
 	sudo add-apt-repository -y ppa:fossfreedom/rhythmbox-plugins
+	sudo apt-add-repository -y ppa:paolorotolo/android-studio
 	sudo apt-get update -y
 	sudo apt-get install -y git vim zsh stow
 	sudo chsh -s `which zsh`
@@ -40,7 +41,7 @@ install:
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
 	sudo apt-get install -y filezilla
 	sudo apt-get install -y rhythmbox-plugin-coverart-browser picard
-	sudo apt-get install -y google-chrome-stable google-cloud-sdk
+	sudo apt-get install -y google-chrome-stable google-cloud-sdk android-studio
 	sudo apt-get install -y apt-file apt-utils apt-venv apt-watch apt-show-versions
 	sudo pip install --upgrade google-api-python-client awscli boto3 pyrax
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
