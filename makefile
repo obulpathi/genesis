@@ -26,6 +26,7 @@ configure-dirs:
 configure:
 	sudo apt-add-repository -y "http://archive.canonical.com/ubuntu partner"
 	sudo add-apt-repository -y ppa:webupd8team/atom
+	sudo add-apt-repository -y ppa:webupd8team/java
 	sudo apt-add-repository -y ppa:bitcoin/bitcoin
 	sudo add-apt-repository -y ppa:fossfreedom/rhythmbox-plugins
 	sudo apt-add-repository -y ppa:paolorotolo/android-studio
