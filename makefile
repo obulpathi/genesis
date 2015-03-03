@@ -65,9 +65,18 @@ install-java:
 	source /etc/environment
 
 install-oracle-java:
-	sudo apt-get install oracle-java7-installer
+	sudo apt-get install -y oracle-java7-installer
 	echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 	sudo update-java-alternatives -s java-7-oracle
+
+install-intellij:
+	wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-14.0.3.tar.gz
+	tar xfz /tmp/intellij.tar.gz -C /tmp
+	sudo mv /tmp/idea-IC-* /opt/idea
+	stow intellij
+	sudo desktop-file-install ~/.desktop/idea.desktop
+	sudo ln -s /opt/idea/bin/idea.sh /usr/local/bin/idea.sh
+	sudo cp /opt/idea/bin/idea.png /usr/share/pixmaps/idea.png
 
 install-bitcoin:
 	sudo apt-get install -y bitcoind bitcoin-qt bitcoin-cli

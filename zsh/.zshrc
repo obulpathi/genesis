@@ -117,19 +117,23 @@ alias xenv='deactivate'
 alias newenv='mkvirtualenv'
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
-# go path
-export GOPATH=$HOME/code/go
-export PATH=$PATH:$GOPATH/bin
-
-# python virtualenv
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-
 # Google Cloud
 alias appengine-deploy='gcloud preview app deploy'
 
 # The next line enables bash completion for google cloud sdk.
 source '/home/obulpathi/.completion.zsh.inc'
+
+# python virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
+# go path
+export GOPATH=$HOME/code/go
+export PATH=$PATH:$GOPATH/bin
+
+# Java
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+export PATH=$PATH:$JAVA_HOME/bin
 
 # Spark
 export SPARK_HOME=~/tools/spark/
