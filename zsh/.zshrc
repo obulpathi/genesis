@@ -117,6 +117,10 @@ alias xenv='deactivate'
 alias newenv='mkvirtualenv'
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
+# data directory aliases
+alias code='cd ~/code'
+alias downloads='cd ~/downloads'
+
 # Google Cloud
 alias appengine-deploy='gcloud preview app deploy'
 
@@ -139,4 +143,6 @@ export PATH=$PATH:$JAVA_HOME/bin
 export SPARK_HOME=~/tools/spark/
 export PATH=$PATH:$SPARK_PATH/bin
 
+# Source localrc
+source .localrc
 echo "Life, Liberty and Pursiut of Open Standards."
