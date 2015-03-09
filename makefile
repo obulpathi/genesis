@@ -8,6 +8,7 @@ configure-git:
 	git config --global clean.requireForce false
 	git config --global push.default simple
 	git config --global gitreview.username obulpathi
+	git config --global credential.helper "cache --timeout=3600"
 	git config --global alias.unadd "reset HEAD"
 	git config --global alias.unstage "reset --"
 	git config --global alias.changed 'show --pretty="format:" --name-only --oneline'
