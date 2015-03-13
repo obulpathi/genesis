@@ -1,0 +1,23 @@
+[global_config]
+  title_transmit_bg_color = "#c5c2c2"
+  handle_size = 0
+  title_transmit_fg_color = "#757171"
+  focus = system
+[keybindings]
+  full_screen = <Ctrl><Shift>F11
+[profiles]
+  [[default]]
+    custom_command = 'echo \"foo#bar\"'
+    background_image = None
+    font = Monospace 10
+    icon_bell = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      profile = default
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
