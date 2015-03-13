@@ -1,4 +1,5 @@
 [global_config]
+  title_hide_sizetext = True
   title_transmit_bg_color = "#c5c2c2"
   handle_size = 0
   title_transmit_fg_color = "#757171"
@@ -8,9 +9,10 @@
 [profiles]
   [[default]]
     custom_command = 'echo \"foo#bar\"'
-    background_image = None
-    font = Monospace 10
+    use_system_font = False
+    font = Monospace 11
     icon_bell = False
+    background_image = None
 [layouts]
   [[default]]
     [[[child1]]]
