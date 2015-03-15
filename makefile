@@ -39,7 +39,7 @@ install:
 	sudo apt-get install -y git vim zsh stow
 	sudo apt-get install -y tree moreutils wipe meld shutter nmap wireshark redshift-gtk
 	sudo apt-get install -y chromium-browser atom docker.io
-	sudo apt-get install -y golang
+	sudo apt-get install -y golang scala
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
 	sudo apt-get install -y filezilla
 	sudo apt-get install -y rhythmbox-plugin-coverart-browser picard
@@ -51,6 +51,9 @@ install:
 
 install-basic:
 	sudo apt-get install -y make git vim zsh stow
+
+install-cloud:
+	sudo apt-get install -y mongodb redis neo4j
 
 install-python:
 	sudo apt-get install -y python-pip python-tox python-sphinx python-dev
