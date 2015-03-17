@@ -115,6 +115,7 @@ alias cloud='gcloud'
 alias eenv='wokron'
 alias xenv='deactivate'
 alias newenv='mkvirtualenv'
+alias clipboard='xclip -selection clipboard'
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
 # data directory aliases
