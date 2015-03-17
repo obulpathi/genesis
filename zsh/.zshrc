@@ -122,9 +122,6 @@ alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias code='cd ~/code'
 alias downloads='cd ~/downloads'
 
-# Google Cloud
-alias appengine-deploy='gcloud preview app deploy'
-
 # The next line updates PATH for the Google Cloud SDK.
 source '/home/obulpathi/apps/google/path.zsh.inc'
 
