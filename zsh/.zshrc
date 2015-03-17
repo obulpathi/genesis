@@ -125,8 +125,11 @@ alias downloads='cd ~/downloads'
 # Google Cloud
 alias appengine-deploy='gcloud preview app deploy'
 
-# The next line enables bash completion for google cloud sdk.
-source '/home/obulpathi/.completion.zsh.inc'
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/obulpathi/apps/google/path.zsh.inc'
+
+# The next line enables bash completion for gcloud.
+source '/home/obulpathi/apps/google/completion.zsh.inc'
 
 # python virtualenv
 export WORKON_HOME=$HOME/.virtualenvs

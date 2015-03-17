@@ -31,6 +31,7 @@ configure:
 	sudo apt-add-repository -y ppa:bitcoin/bitcoin
 	sudo add-apt-repository -y ppa:fossfreedom/rhythmbox-plugins
 	sudo apt-add-repository -y ppa:paolorotolo/android-studio
+	sudo apt-add-repository -y ppa:no1wantdthisname/openjdk-fontfix
 	sudo apt-get update -y
 	sudo apt-get install -y git vim zsh stow
 	sudo chsh -s `which zsh`
