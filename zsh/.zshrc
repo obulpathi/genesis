@@ -144,6 +144,8 @@ export PATH=$PATH:$JAVA_HOME/bin
 export SPARK_HOME=~/tools/spark/
 export PATH=$PATH:$SPARK_PATH/bin
 
-# Source ~/.localrc
+# source additional files
+source ~/.scripts.sh
 source ~/.localrc
+
 echo "Life, Liberty and Pursiut of Open Standards."
