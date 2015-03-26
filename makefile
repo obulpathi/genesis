@@ -39,7 +39,8 @@ configure:
 install:
 	sudo apt-get install -y git vim zsh stow
 	sudo apt-get install -y tree moreutils wipe meld shutter nmap wireshark redshift-gtk
-	sudo apt-get install -y chromium-browser atom docker.io
+	sudo apt-get install -y chromium-browser atom
+	sudo apt-get install -y docker.io docker-compose
 	sudo apt-get install -y golang scala
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
 	sudo apt-get install -y filezilla
