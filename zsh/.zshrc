@@ -144,6 +144,11 @@ export PATH=$PATH:$JAVA_HOME/bin
 export SPARK_HOME=~/tools/spark/
 export PATH=$PATH:$SPARK_PATH/bin
 
+# Docker containers
+export ZK_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' zookeeper)
+export KAFKA_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' kafka)
+export CASSANDRA_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' cassandra)
+
 # source additional files
 source ~/.scripts.sh
 source ~/.localrc
