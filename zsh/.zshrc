@@ -152,5 +152,6 @@ export CASSANDRA_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}'
 # source additional files
 source ~/.scripts.sh
 source ~/.localrc
+tmux source ~/.tmux.conf 1>/dev/null
 
 echo "Life, Liberty and Pursiut of Open Standards."
