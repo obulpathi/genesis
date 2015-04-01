@@ -154,6 +154,6 @@ export PATH=$PATH:$SPARK_PATH/bin
 # source additional files
 source ~/.scripts.sh
 source ~/.localrc
-tmux source ~/.tmux.conf 1>/dev/null
+
 
 echo "Life, Liberty and Pursiut of Open Standards."
