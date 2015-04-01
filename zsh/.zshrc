@@ -122,6 +122,13 @@ alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias code='cd ~/code'
 alias downloads='cd ~/downloads'
 
+# docker containers
+alias docker-spark='docker run -i -t -h sandbox sequenceiq/spark:1.2.0 /etc/bootstrap.sh -bash'
+alias docker-kafka=''
+alias docker-hadoop=''
+alias docker-cassandra=''
+alias docker-zookeeper=''
+
 # The next line updates PATH for the Google Cloud SDK.
 source '/home/obulpathi/tools/google/path.zsh.inc'
 
