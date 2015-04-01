@@ -85,7 +85,7 @@ install-intellij:
 	sudo ln -s /opt/idea/bin/idea.sh /usr/local/bin/idea.sh
 	sudo cp /opt/idea/bin/idea.png /usr/share/pixmaps/idea.png
 
-install-powerline:
+configure-powerline:
 	wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
 	mkdir -p ~/.fonts/ && mv PowerlineSymbols.otf ~/.fonts/
 	fc-cache -vf ~/.fonts
