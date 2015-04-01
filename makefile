@@ -63,7 +63,7 @@ install-python:
 	sudo apt-get install -y python-numpy python-scipy python-sympy python-matplotlib python-pandas
 	sudo apt-get install -y ipython python-ipdb ipython-qtconsole ipython-notebook
 	sudo apt-get install -y python-flask python-jinja2 python-django
-	sudo apt-get install -y blockchain
+	sudo apt-get install -y powerline-status blockchain
 
 install-java:
 	sudo apt-get install default-jre default-jdk
@@ -84,6 +84,12 @@ install-intellij:
 	sudo desktop-file-install ~/.desktop/idea.desktop
 	sudo ln -s /opt/idea/bin/idea.sh /usr/local/bin/idea.sh
 	sudo cp /opt/idea/bin/idea.png /usr/share/pixmaps/idea.png
+
+install-powerline:
+	wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+	mkdir -p ~/.fonts/ && mv PowerlineSymbols.otf ~/.fonts/
+	fc-cache -vf ~/.fonts
+	mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
 install-bitcoin:
 	sudo apt-get install -y bitcoind bitcoin-qt bitcoin-cli
