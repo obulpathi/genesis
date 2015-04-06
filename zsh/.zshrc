@@ -126,8 +126,9 @@ alias downloads='cd ~/downloads'
 alias docker-spark='docker run -i -t -h sandbox sequenceiq/spark:1.2.0 /etc/bootstrap.sh -bash'
 alias docker-kafka=''
 alias docker-hadoop=''
-alias docker-cassandra=''
-alias docker-zookeeper=''
+alias docker-cassandra='docker run -d spotify/cassandra'
+alias docker-zookeeper='docker run -d jplock/zookeeper'
+alias docker-neo4j='docker run -i -t -d --name neo4j --cap-add=SYS_RESOURCE -p 7474:7474 tpires/neo4j'
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/home/obulpathi/tools/google/path.zsh.inc'
