@@ -156,5 +156,9 @@ export PATH=$PATH:$SPARK_PATH/bin
 source ~/.scripts.sh
 source ~/.localrc
 
+# powerline
+if [[ -r .powerline.zsh ]]; then
+	source .powerline.zsh
+fi
 
 echo "Life, Liberty and Pursiut of Open Standards."
