@@ -101,6 +101,6 @@ install-applets:
 	sudo apt-get install indicator-brightness indicator-multiload
 
 configure-manual:
-	terminal: shortcuts for copy, paste, tabs: new, close, open
+	terminal: shortcuts for copy, paste, reset and clear, tabs: new, close, open
 	terminal and atom: change new tab, close tab shortcuts
 	atom-plugins github-ssh-keys
