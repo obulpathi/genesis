@@ -43,7 +43,7 @@ install:
 	sudo apt-get install -y docker.io
 	sudo apt-get install -y golang scala
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
-	sudo apt-get install -y filezilla
+	sudo apt-get install -y git-review filezilla
 	sudo apt-get install -y rhythmbox-plugin-coverart-browser picard
 	sudo apt-get install -y google-chrome-stable google-cloud-sdk android-studio
 	sudo apt-get install -y apt-file apt-utils apt-venv apt-watch apt-show-versions
