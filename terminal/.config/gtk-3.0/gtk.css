@@ -1,0 +1,23 @@
+@define-color light-grey #3c3b37;
+@define-color dark-grey #292929;
+@define-color burnt-yellow #645c3e;
+@define-color black #000000;
+
+
+TerminalWindow .notebook {
+    border: 0; /* set to any # to remove border around the active tab */
+    border-width: 0; /* extra border around the terminal body with gray color */
+    padding: 0; /* thickness of border width around terminal body, including under tab */
+    background-color: shade(@black,1); /* color of padding around terminal body */
+    color: #ffffff; /* color of text on tabs */
+}
+
+
+TerminalWindow .notebook tab:active {
+    background-color: shade(@black,1); /* color of active tab */
+}
+
+
+TerminalWindow .notebook tab {
+    background-color: shade(@light-grey,1); /* color of inactive tab */
+}

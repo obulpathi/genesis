@@ -1,4 +1,12 @@
 Genesis
 =======
 
-Configuration files for a newly install computer
+Software installation and configuration files for a newly installed computer.
+
+Usage
+--------------
+* make configure
+* make install
+* stow zsh
+* stow git
+* stow vim
