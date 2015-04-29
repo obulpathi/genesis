@@ -76,6 +76,11 @@ install-oracle-java:
 	echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 	sudo update-java-alternatives -s java-7-oracle
 
+install-dart:
+	sudo sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+	sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+	sudo apt-get update && sudo apt-get install dart
+
 install-intellij:
 	wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-14.0.3.tar.gz
 	tar xfz /tmp/intellij.tar.gz -C /tmp
