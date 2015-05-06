@@ -31,7 +31,7 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -115,6 +115,7 @@ alias google='gcloud'
 alias eenv='wokron'
 alias xenv='deactivate'
 alias newenv='mkvirtualenv'
+alias play='ansible-playbook'
 alias clipboard='xclip -selection clipboard'
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
