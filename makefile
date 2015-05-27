@@ -82,8 +82,8 @@ install-dart:
 	sudo apt-get update && sudo apt-get install dart
 
 install-intellij:
-	wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-14.0.3.tar.gz
-	tar xfz /tmp/intellij.tar.gz -C /tmp
+	# download intellij
+	tar xfz intellij.tar.gz -C /tmp
 	sudo mv /tmp/idea-IC-* /opt/idea
 	stow intellij
 	sudo desktop-file-install ~/.desktop/idea.desktop
