@@ -47,7 +47,7 @@ install:
 	sudo apt-get install -y rhythmbox-plugin-coverart-browser picard
 	sudo apt-get install -y google-chrome-stable google-cloud-sdk android-studio
 	sudo apt-get install -y apt-file apt-utils apt-venv apt-watch apt-show-versions
-	sudo pip install --upgrade google-api-python-client awscli boto3 pyrax docker-compose
+	sudo pip install --upgrade google-api-python-client awscli boto3 pyrax docker-compose clf
 	sudo pip install --upgrade python-openstacksdk python-openstackclient
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
