@@ -125,7 +125,7 @@ alias code='cd ~/code'
 alias downloads='cd ~/downloads'
 
 # git shortcuts
-alias git-format-patch ='git format-patch -1 HEAD'
+alias git-format-patch='git format-patch -1 HEAD'
 
 # docker containers
 alias docker-spark='docker run -i -t -h sandbox sequenceiq/spark:1.2.0 /etc/bootstrap.sh -bash'
