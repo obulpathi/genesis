@@ -49,6 +49,7 @@ install:
 	sudo apt-get install -y apt-file apt-utils apt-venv apt-watch apt-show-versions
 	sudo pip install --upgrade google-api-python-client awscli boto3 pyrax docker-compose clf
 	sudo pip install --upgrade python-openstacksdk python-openstackclient
+	sudo pip install --upgrade powerline-status
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 install-basic:
