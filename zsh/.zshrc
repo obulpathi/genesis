@@ -154,8 +154,9 @@ export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 export PATH=$PATH:$JAVA_HOME/bin
 
 # Spark
-export SPARK_HOME=~/tools/spark/
+export SPARK_HOME=~/tools/spark/spark/
 export PATH=$PATH:$SPARK_PATH/bin
+alias pyspark=$SPARK_HOME/bin/pyspark
 
 # source additional files
 source ~/.scripts.sh
