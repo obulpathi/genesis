@@ -43,12 +43,13 @@ install:
 	sudo apt-get install -y docker.io
 	sudo apt-get install -y golang scala
 	sudo apt-get install -y virtualbox virtualbox-guest-\*
-	sudo apt-get install -y filezilla
+	sudo apt-get install -y git-review filezilla
 	sudo apt-get install -y rhythmbox-plugin-coverart-browser picard
 	sudo apt-get install -y google-chrome-stable google-cloud-sdk android-studio
 	sudo apt-get install -y apt-file apt-utils apt-venv apt-watch apt-show-versions
-	sudo pip install --upgrade google-api-python-client awscli boto3 pyrax docker-compose
+	sudo pip install --upgrade google-api-python-client awscli boto3 pyrax docker-compose clf
 	sudo pip install --upgrade python-openstacksdk python-openstackclient
+	sudo pip install --upgrade powerline-status
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 install-basic:
@@ -76,9 +77,14 @@ install-oracle-java:
 	echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 	sudo update-java-alternatives -s java-7-oracle
 
+install-dart:
+	sudo sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+	sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+	sudo apt-get update && sudo apt-get install dart
+
 install-intellij:
-	wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-14.0.3.tar.gz
-	tar xfz /tmp/intellij.tar.gz -C /tmp
+	# download intellij
+	tar xfz intellij.tar.gz -C /tmp
 	sudo mv /tmp/idea-IC-* /opt/idea
 	stow intellij
 	sudo desktop-file-install ~/.desktop/idea.desktop

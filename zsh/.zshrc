@@ -31,7 +31,7 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -112,15 +112,20 @@ alias chown='chown -R'
 alias chmod='chmod -R'
 alias pyhton='python'
 alias google='gcloud'
+alias snippet='clf'
 alias eenv='wokron'
 alias xenv='deactivate'
 alias newenv='mkvirtualenv'
+alias play='ansible-playbook'
 alias clipboard='xclip -selection clipboard'
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
 # data directory aliases
 alias code='cd ~/code'
 alias downloads='cd ~/downloads'
+
+# git shortcuts
+alias git-format-patch='git format-patch -1 HEAD'
 
 # docker containers
 alias docker-spark='docker run -i -t -h sandbox sequenceiq/spark:1.2.0 /etc/bootstrap.sh -bash'
@@ -149,8 +154,9 @@ export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 export PATH=$PATH:$JAVA_HOME/bin
 
 # Spark
-export SPARK_HOME=~/tools/spark/
+export SPARK_HOME=~/tools/spark/spark/
 export PATH=$PATH:$SPARK_PATH/bin
+alias pyspark=$SPARK_HOME/bin/pyspark
 
 # source additional files
 source ~/.scripts.sh
