@@ -85,15 +85,8 @@ ZSH_THEME_TERM_TITLE_IDLE="%3c"
 
 # my settings
 
-# shortcut remapping
-stty intr ^K
-
 # append history
 setopt APPEND_HISTORY
-
-# Ubuntu Launchpad
-export DEBEMAIL="obulpathi@gmail.com"
-export DEBFULLNAME="Obulapathi"
 
 # display settings
 set sw=4
@@ -124,9 +117,6 @@ alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias code='cd ~/code'
 alias downloads='cd ~/downloads'
 
-# git shortcuts
-alias git-format-patch='git format-patch -1 HEAD'
-
 # docker containers
 alias docker-spark='docker run -i -t -h sandbox sequenceiq/spark:1.2.0 /etc/bootstrap.sh -bash'
 alias docker-kafka=''
@@ -135,15 +125,10 @@ alias docker-cassandra='docker run -d spotify/cassandra'
 alias docker-zookeeper='docker run -d jplock/zookeeper'
 alias docker-neo4j='docker run -i -t -d --name neo4j --cap-add=SYS_RESOURCE -p 7474:7474 tpires/neo4j'
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/obulpathi/tools/google/path.zsh.inc'
-
-# The next line enables bash completion for gcloud.
-source '/home/obulpathi/tools/google/completion.zsh.inc'
-
-# python virtualenv
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+# powerline
+if [[ -r .powerline.zsh ]]; then
+	source .powerline.zsh
+fi
 
 # go path
 export GOPATH=$HOME/code/go
@@ -158,13 +143,15 @@ export SPARK_HOME=~/tools/spark/spark/
 export PATH=$PATH:$SPARK_PATH/bin
 alias pyspark=$SPARK_HOME/bin/pyspark
 
-# source additional files
-source ~/.scripts.sh
-source ~/.localrc
+# Google Cloud
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/onchal/tools/google/cloud/path.zsh.inc'
 
-# powerline
-if [[ -r .powerline.zsh ]]; then
-	source .powerline.zsh
-fi
+# The next line enables shell command completion for gcloud.
+source '/Users/onchal/tools/google/cloud/completion.zsh.inc'
+
+# source additional files
+source ~/.localrc
+source ~/.scripts.sh
 
 echo "Life, Liberty and Pursiut of Open Standards."

@@ -1,0 +1,7 @@
+
+# shortcut remapping
+stty intr ^K
+
+# python virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
