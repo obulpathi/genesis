@@ -95,8 +95,8 @@ set tab-width=4
 # aliases
 alias la='ls -A'
 alias l='ls -CF'
-alias ll='ls -l'
-alias lh='ls -lh'
+alias ll='ls -ltr'
+alias lh='ls -ltrh'
 alias cp='cp -r'
 alias df='df -h'
 alias rm='rm -r'
