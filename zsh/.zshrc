@@ -45,7 +45,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker)
+plugins=(git docker aws go brew)
 
 # User configuration
 
@@ -133,10 +133,6 @@ fi
 # go path
 export GOPATH=$HOME/code/go
 export PATH=$PATH:$GOPATH/bin
-
-# Java
-export JAVA_HOME=/usr/lib/jvm/java-7-oracle
-export PATH=$PATH:$JAVA_HOME/bin
 
 # Spark
 export SPARK_HOME=~/tools/spark/spark/
