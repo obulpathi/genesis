@@ -141,10 +141,10 @@ alias pyspark=$SPARK_HOME/bin/pyspark
 
 # Google Cloud
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/onchal/tools/google/cloud/path.zsh.inc'
+source $HOME/tools/google/cloud/path.zsh.inc
 
 # The next line enables shell command completion for gcloud.
-source '/Users/onchal/tools/google/cloud/completion.zsh.inc'
+source $HOME/tools/google/cloud/completion.zsh.inc
 
 # source additional files
 source ~/.localrc
