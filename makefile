@@ -69,7 +69,7 @@ install-python:
 install-java:
 	sudo apt-get install default-jre default-jdk bsh
 	sudo update-alternatives --config java
-	echo JAVA_HOME="/usr/lib/jvm/java-6-openjdk-amd64" >> /etc/environment
+	sudo echo JAVA_HOME="/usr/lib/jvm/java-6-openjdk-amd64" >> /etc/environment
 	source /etc/environment
 
 install-oracle-java:
