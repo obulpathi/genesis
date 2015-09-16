@@ -9,3 +9,6 @@ source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 # Java
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export PATH=$PATH:$JAVA_HOME/bin
+
+# Chef
+export PATH="$PATH:/opt/chef/embedded/bin"
