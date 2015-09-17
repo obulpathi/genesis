@@ -135,9 +135,8 @@ export GOPATH=$HOME/code/go
 export PATH=$PATH:$GOPATH/bin
 
 # Spark
-export SPARK_HOME=~/tools/spark/spark/
+export SPARK_HOME=~/tools/spark/
 export PATH=$PATH:$SPARK_HOME/bin
-alias pyspark=$SPARK_HOME/bin/pyspark
 
 # Google Cloud
 # The next line updates PATH for the Google Cloud SDK.
