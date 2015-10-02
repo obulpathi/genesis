@@ -1,5 +1,38 @@
 .PHONY: configure dirs
 
+install:
+	sudo apt-get install -y git vim zsh tree
+
+install-cloud:
+	sudo pip install awscli
+
+install-utils:
+	sudo apt-get install -y git vim zsh tree shred moreutils wipe meld shutter
+	sudo apt-get install -y chromium-browser atom
+
+install-python:
+	sudo apt-get install -y python-pip python-virtualenv ipython python-ipdb python-tox python-sphinx
+	sudo pip install virtualenvwrapper httpie joe
+
+install-apps:
+	sudo apt-get install shutter meld chromium-browser
+
+install-web:
+	install android-studio google-web-designer arduino evernote-client
+	install shutter meld chromium-browser redshift redshift-gtk
+
+configure:
+	sudo apt-add-repository -y "http://archive.canonical.com/ubuntu partner"
+	sudo add-apt-repository -y ppa:webupd8team/atom
+	sudo add-apt-repository -y ppa:webupd8team/java
+	sudo apt-add-repository -y ppa:bitcoin/bitcoin
+	sudo add-apt-repository -y ppa:fossfreedom/rhythmbox-plugins
+	sudo apt-add-repository -y ppa:paolorotolo/android-studio
+	sudo apt-add-repository -y ppa:no1wantdthisname/openjdk-fontfix
+	sudo apt-get update -y
+	sudo apt-get install -y git vim zsh stow
+	sudo chsh -s `which zsh`
+
 configure-git:
 	git config --global user.name "Obulpathi"
 	git config --global user.email obulpathi@gmail.com
@@ -23,18 +56,6 @@ configure-dirs:
 	mv ~/Templates ~/.templates
 	mv ~/Videos ~/videos
 	rm ~/examples.desktop
-
-configure:
-	sudo apt-add-repository -y "http://archive.canonical.com/ubuntu partner"
-	sudo add-apt-repository -y ppa:webupd8team/atom
-	sudo add-apt-repository -y ppa:webupd8team/java
-	sudo apt-add-repository -y ppa:bitcoin/bitcoin
-	sudo add-apt-repository -y ppa:fossfreedom/rhythmbox-plugins
-	sudo apt-add-repository -y ppa:paolorotolo/android-studio
-	sudo apt-add-repository -y ppa:no1wantdthisname/openjdk-fontfix
-	sudo apt-get update -y
-	sudo apt-get install -y git vim zsh stow
-	sudo chsh -s `which zsh`
 
 install:
 	sudo apt-get install -y git vim zsh stow
@@ -69,7 +90,7 @@ install-python:
 install-java:
 	sudo apt-get install default-jre default-jdk bsh
 	sudo update-alternatives --config java
-	sudo echo JAVA_HOME="/usr/lib/jvm/java-6-openjdk-amd64" >> /etc/environment
+	sudo echo JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64" >> /etc/environment
 	source /etc/environment
 
 install-oracle-java:
