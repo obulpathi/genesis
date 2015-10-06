@@ -79,10 +79,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# override zsh settings
-PS1='%1c # '
-ZSH_THEME_TERM_TITLE_IDLE="%3c"
-
 # my settings
 
 # append history
@@ -149,5 +145,9 @@ source $HOME/tools/google/cloud/completion.zsh.inc
 # source additional files
 source ~/.localrc
 source ~/.scripts.sh
+
+# override zsh settings
+PS1='%1c # '
+ZSH_THEME_TERM_TITLE_IDLE="%3c"
 
 echo "Life, Liberty and Pursiut of Open Standards."
