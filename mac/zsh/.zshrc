@@ -146,7 +146,7 @@ source $HOME/tools/google/cloud/completion.zsh.inc
 source ~/.localrc
 source ~/.scripts.sh
 
-xport CLICOLOR=1
+export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # directory aliases
