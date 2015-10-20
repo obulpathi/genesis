@@ -91,7 +91,7 @@ set tab-width=4
 # aliases
 alias la='ls -A'
 alias l='ls -CF'
-alias ll='ls -ltr'
+alias ll='ls -l'
 alias lh='ls -ltrh'
 alias cp='cp -r'
 alias df='df -h'
@@ -132,8 +132,12 @@ export GOPATH=$HOME/code/go
 export PATH=$PATH:$GOPATH/bin
 
 # Spark
-export SPARK_HOME=~/tools/spark/
+export SPARK_HOME=~/tools/spark
 export PATH=$PATH:$SPARK_HOME/bin
+
+# others
+export OTHERS_HOME=~/tools
+export PATH=$PATH:$OTHERS_HOME/bin
 
 # Google Cloud
 # The next line updates PATH for the Google Cloud SDK.
