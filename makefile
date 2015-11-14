@@ -1,7 +1,7 @@
 .PHONY: configure dirs
 
 install:
-	sudo apt-get install -y git vim zsh tree
+	sudo apt-get install -y git vim zsh tree stow editorconfig
 
 install-cloud:
 	sudo pip install awscli
