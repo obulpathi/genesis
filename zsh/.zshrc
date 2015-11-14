@@ -97,6 +97,7 @@ alias cp='cp -r'
 alias df='df -h'
 alias rm='rm -r'
 alias maek='make'
+alias stow='stow -t ~'
 alias chown='chown -R'
 alias chmod='chmod -R'
 alias pyhton='python'
@@ -143,8 +144,8 @@ source $HOME/tools/google/cloud/path.zsh.inc
 source $HOME/tools/google/cloud/completion.zsh.inc
 
 # source additional files
-source ~/.localrc
-source ~/.scripts.sh
+[ -f ~/.scripts.sh ] && source ~/.scripts.sh
+[ -f ~/.zshrc-local ] && source ~/.zshrc-local
 
 # override zsh settings
 PS1='%1c # '
