@@ -7,6 +7,6 @@ Usage
 --------------
 * make configure
 * make install
-* stow zsh
-* stow git
-* stow vim
+* stow --target=/home/obulpathi zsh
+* stow --target=/home/obulpathi git
+* stow --target=/home/obulpathi vim
