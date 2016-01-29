@@ -14,6 +14,9 @@ install-python:
 	sudo apt-get install -y python-pip python-virtualenv ipython python-ipdb python-tox python-sphinx
 	sudo pip install virtualenvwrapper httpie joe
 
+install-atom-packages:
+	apm install editorconfig
+
 install-apps:
 	sudo apt-get install shutter meld chromium-browser
 
