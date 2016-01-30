@@ -11,8 +11,8 @@ install-utils:
 	sudo apt-get install -y chromium-browser atom
 
 install-python:
-	sudo apt-get install -y python-pip python-virtualenv ipython python-ipdb python-tox python-sphinx
-	sudo pip install virtualenvwrapper httpie joe
+	sudo apt-get install -y python-pip python-virtualenv ipython python-ipdb python-tox python-dev build-essential
+	sudo pip install virtualenvwrapper httpie joe "ipython[notebook]"
 
 install-atom-packages:
 	apm install editorconfig
