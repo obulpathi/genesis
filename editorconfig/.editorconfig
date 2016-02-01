@@ -1,5 +1,12 @@
 # EditorConfig is awesome: http://EditorConfig.org
 
+# defaults
+charset = utf-8
+indent_style = tab
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
 # top-most EditorConfig file
 root = true
 
@@ -21,6 +28,7 @@ indent_size = 4
 # Tab indentation (no size specified)
 [Makefile]
 indent_style = tab
+indent_size = 4
 
 # Indentation override for all JS under lib directory
 [lib/**.js]
@@ -31,13 +39,3 @@ indent_size = 2
 [{package.json,.travis.yml}]
 indent_style = space
 indent_size = 2
-
-#old 20151110
-#root = true
-#
-#[*]
-#charset = utf-8
-#indent_style = tab
-#end_of_line = lf
-#insert_final_newline = true
-#trim_trailing_whitespace = true
