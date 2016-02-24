@@ -146,7 +146,7 @@ source $HOME/tools/google/cloud/completion.zsh.inc
 
 # source additional files
 [ -f ~/.scripts.sh ] && source ~/.scripts.sh
-[ -f ~/.zshrc-local ] && source ~/.zshrc-local
+[ -f ~/.localrc ] && source ~/.localrc
 
 # override zsh settings
 PS1='%1c # '
