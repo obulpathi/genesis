@@ -108,10 +108,9 @@ install-dart:
 
 install-intellij:
 	# download intellij
-	tar xfz intellij.tar.gz -C /tmp
+	tar xfz ~/download/intellij.tar.gz -C /tmp
 	sudo mv /tmp/idea-IC-* /opt/idea
-	stow intellij
-	sudo desktop-file-install ~/.desktop/idea.desktop
+	#sudo desktop-file-install ~/.desktop/idea.desktop
 	sudo ln -s /opt/idea/bin/idea.sh /usr/local/bin/idea.sh
 	sudo cp /opt/idea/bin/idea.png /usr/share/pixmaps/idea.png
 
