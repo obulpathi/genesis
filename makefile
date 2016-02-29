@@ -24,6 +24,12 @@ install-web:
 	install android-studio google-web-designer arduino evernote-client
 	install shutter meld chromium-browser redshift redshift-gtk
 
+install-ethereum:
+	sudo add-apt-repository ppa:ethereum/ethereum-qt
+	sudo add-apt-repository ppa:ethereum/ethereum
+	sudo apt-get update
+	sudo apt-get install cpp-ethereum
+
 configure:
 	sudo apt-add-repository -y "http://archive.canonical.com/ubuntu partner"
 	sudo add-apt-repository -y ppa:webupd8team/atom
