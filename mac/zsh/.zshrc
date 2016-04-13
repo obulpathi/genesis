@@ -49,7 +49,7 @@ plugins=(git docker aws go brew)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:.
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -106,6 +106,7 @@ alias eenv='wokron'
 alias xenv='deactivate'
 alias gitignore='joe'
 alias newenv='mkvirtualenv'
+alias zkshell='zookeeper-shell'
 alias play='ansible-playbook'
 alias clipboard='xclip -selection clipboard'
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
