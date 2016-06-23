@@ -139,10 +139,9 @@ export PATH=$PATH:$SPARK_HOME/bin
 
 # Google Cloud
 # The next line updates PATH for the Google Cloud SDK.
-source $HOME/tools/google/cloud/path.zsh.inc
-
+source '/home/obulpathi/software/google-cloud-sdk/path.zsh.inc'
 # The next line enables shell command completion for gcloud.
-source $HOME/tools/google/cloud/completion.zsh.inc
+source '/home/obulpathi/software/google-cloud-sdk/completion.zsh.inc'
 
 # source additional files
 [ -f ~/.scripts.sh ] && source ~/.scripts.sh
