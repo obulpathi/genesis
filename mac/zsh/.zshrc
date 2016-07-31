@@ -142,14 +142,14 @@ export PATH=$PATH:$OTHERS_HOME/bin
 
 # Google Cloud
 # The next line updates PATH for the Google Cloud SDK.
-source $HOME/tools/google/cloud/path.zsh.inc
+[ -f $HOME/tools/google/cloud/path.zsh.inc ] && source $HOME/tools/google/cloud/path.zsh.inc
 
 # The next line enables shell command completion for gcloud.
-source $HOME/tools/google/cloud/completion.zsh.inc
+[ -f $HOME/tools/google/cloud/completion.zsh.inc ] && source $HOME/tools/google/cloud/completion.zsh.inc
 
 # source additional files
-source ~/.localrc
-source ~/.scripts.sh
+[ -f ~/.scripts.sh ] && source ~/.scripts.sh
+[ -f ~/.localrc ] && source ~/.localrc
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
