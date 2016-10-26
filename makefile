@@ -15,11 +15,7 @@ install-python:
 	sudo pip install virtualenvwrapper httpie joe "ipython[notebook]"
 
 install-atom-packages:
-	apm install editorconfig
-	apm install tool-bar
-	apm install tool-bar-almighty
-	apm install git-control git-projects project-manager merge-conflicts minimap
-	apm install platformio-ide
+	apm install editorconfig jupyter-notebook file-icons
 
 install-apps:
 	sudo apt-get install shutter meld chromium-browser
